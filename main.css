@@ -64,7 +64,6 @@ nav .nav-right-section img{
 /* ----------------- MAIN ----------------- */
 main{
     margin-top: 10%;
-    background-color: aliceblue;
     /* Centar elementos */
     text-align: center;
 }
@@ -142,6 +141,7 @@ main .main-input .cam-icon{
     background-size: contain;
     background-repeat: no-repeat;
     padding-right: 6%;
+    margin-right: 3%;
 }
 
 main .main-buttons{
@@ -172,53 +172,59 @@ main .main-buttons button:hover{
 }
 
 /* ----------------- Footer ----------------- */
+
 footer{
-    align-items: flex-end;
-    background-color: #f2f2f2;
-    padding: 10px 0;
-    
+    background-color: rgba(241, 243, 241, 0.627); /*#f8f9fa*/
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: rgba(25, 24, 24, 0.6);
+    font-size: 13.5px;
 }
 
-.footer-pais{
-    text-align: left;
-    color: #555;
-    font-size: 14px;
-    margin: 4px 0;
+.footer-pai{
+    width: auto;
+    height: auto;
+    align-items: end;
+    margin-left: 3.1%;
 }
 
-.footer-contenido{
+footer nav{
+    border: 1px solid #dadce0;
+    display: flex;
+}
+
+nav li{
+    margin-right: 4.7%;
+}
+
+nav a{
+    color: rgba(25, 24, 24, 0.6);
+    font-size: 13.5px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+footer nav .footer-nav-left{
+    flex: 1;
+    flex-basis: 50%;
+	flex-grow: 0;
+	flex-shrink: 0;
+    width: auto;
+    height: auto;
+    list-style: none;
+    display: flex;
     align-items: center;
-    display: flex;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
-.footer-negocios{
+footer nav .footer-nav-right{
+    flex: 2;
+    width: auto;
+    height: auto;
+    list-style: none;
     display: flex;
-    justify-content: flex-start;
-    /* FALTA */
-}
-
-.footer-acuerdos{
-    display: inline;
+    align-items: center;
     justify-content: flex-end;
-    /* FALTA */
 }
-
-.footer-negocios a{
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    margin: 4px 0;
-    
-}
-
-.footer-acuerdos a{
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
-    margin: 4px 0;
-}
-
-
